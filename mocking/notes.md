@@ -1,0 +1,6 @@
+# chapter 9
+
+- mocking is a way to unit test software that depends on other, complex dependencies, it is a good way to isolate the behaviour of the object under test from its dependencies by replacing them with "mocks" of the dependencies that simulate their behaviour in a known and controllable manner
+- this is useful when you want to test code that interacts with things like databases, servers etc because by mocking the behaviour of the dependancies we dont have to make connections to them and worry about any errors they might induce that is not a part of the code under test not to mention this will make the tests run much, much faster because it doesn't have to actually connect to any external service or database but can instead just interact with a cheap to invoke mock of the real thing
+- this leads to having more robust tests because the mock object is always reliable unlike an external service or database
+- the mocks themselves are programmed with the expectations of the kinds of calls they are to recieve and can actually be said to be somewhat of a spec in and of themselves from the POV of the code calling them.

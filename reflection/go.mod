@@ -1,3 +1,3 @@
-package reflection
+module reflection
 
 go 1.21.3

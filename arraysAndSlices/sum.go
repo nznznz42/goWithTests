@@ -1,8 +1,11 @@
 package main
 
 func Sum(numbers []int) int {
-	add := func(acc, x int) int { return acc + x }
-	return Reduce(numbers, add, 0)
+	sum := 0
+	for _, number := range numbers {
+		sum += number
+	}
+	return sum
 }
 
 func SumAllTails(numbersToSum ...[]int) []int {

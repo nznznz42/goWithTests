@@ -1,11 +1,9 @@
-package clockface_test
+package main
 
 import (
 	"math"
 	"testing"
 	"time"
-
-	. "goWithTests/maths"
 )
 
 func TestSecondsInRadians(t *testing.T) {

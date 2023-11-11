@@ -1,3 +1,3 @@
-package roman_numerals
+module roman_numerals
 
 go 1.21.3
